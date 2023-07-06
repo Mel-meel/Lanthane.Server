@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<katyusha>
+	<version>1.0.0</version>
+</katyusha>
+<base>
+	<nom>Base</nom>
+	<sgbd>mysql</sgbd>
+	<rep>/home/era/Projets/Lanthane.Server/MISC</rep>
+	<drop>0</drop>
+</base>
+<tables>
+	<table id=0>
+		<nom>utilisateur</nom>
+		<attributs>
+			<attribut id=1>
+				<nom>id</nom>
+				<type>integer</type>
+				<complement_type></complement_type>
+				<pk>1</pk>
+				<taille></taille>
+				<auto_increment>1</auto_increment>
+				<valeur></valeur>
+				<null>0</null>
+				<description></description>
+			</attribut>
+			<attribut id=2>
+				<nom>nom</nom>
+				<type>varchar</type>
+				<complement_type></complement_type>
+				<pk>0</pk>
+				<taille>255</taille>
+				<auto_increment>0</auto_increment>
+				<valeur>null</valeur>
+				<null>0</null>
+				<description></description>
+			</attribut>
+			<attribut id=3>
+				<nom>mail</nom>
+				<type>varchar</type>
+				<complement_type></complement_type>
+				<pk>0</pk>
+				<taille>255</taille>
+				<auto_increment>0</auto_increment>
+				<valeur>null</valeur>
+				<null>0</null>
+				<description></description>
+			</attribut>
+		</attributs>
+		<couleurs>
+			<fond_tete>#FFFFFF</fond_tete>
+			<ligne>#FF7000</ligne>
+			<fond_corps>#FFB57B</fond_corps>
+			<texte>black</texte>
+		</couleurs>
+		<description></description>
+	<coords>281.0/105.0</coords>
+	</table>
+	<table id=1>
+		<nom>groupe</nom>
+		<attributs>
+			<attribut id=1>
+				<nom>id</nom>
+				<type>integer</type>
+				<complement_type></complement_type>
+				<pk>1</pk>
+				<taille></taille>
+				<auto_increment>1</auto_increment>
+				<valeur></valeur>
+				<null>0</null>
+				<description></description>
+			</attribut>
+			<attribut id=2>
+				<nom>nom</nom>
+				<type>varchar</type>
+				<complement_type></complement_type>
+				<pk>0</pk>
+				<taille>255</taille>
+				<auto_increment>0</auto_increment>
+				<valeur>null</valeur>
+				<null>0</null>
+				<description></description>
+			</attribut>
+		</attributs>
+		<couleurs>
+			<fond_tete>#FFFFFF</fond_tete>
+			<ligne>#FF7000</ligne>
+			<fond_corps>#FFB57B</fond_corps>
+			<texte>black</texte>
+		</couleurs>
+		<description></description>
+	<coords>685.0/109.0</coords>
+	</table>
+	<table id=2>
+		<nom>fichier</nom>
+		<attributs>
+			<attribut id=1>
+				<nom>id</nom>
+				<type>integer</type>
+				<complement_type></complement_type>
+				<pk>1</pk>
+				<taille></taille>
+				<auto_increment>1</auto_increment>
+				<valeur></valeur>
+				<null>0</null>
+				<description></description>
+			</attribut>
+			<attribut id=2>
+				<nom>nom</nom>
+				<type>varchar</type>
+				<complement_type></complement_type>
+				<pk>0</pk>
+				<taille>255</taille>
+				<auto_increment>0</auto_increment>
+				<valeur>null</valeur>
+				<null>0</null>
+				<description></description>
+			</attribut>
+			<attribut id=3>
+				<nom>ext</nom>
+				<type>varchar</type>
+				<complement_type></complement_type>
+				<pk>0</pk>
+				<taille></taille>
+				<auto_increment>0</auto_increment>
+				<valeur>null</valeur>
+				<null>0</null>
+				<description></description>
+			</attribut>
+			<attribut id=4>
+				<nom>type</nom>
+				<type>varchar</type>
+				<complement_type></complement_type>
+				<pk>0</pk>
+				<taille>15</taille>
+				<auto_increment>0</auto_increment>
+				<valeur>null</valeur>
+				<null>1</null>
+				<description></description>
+			</attribut>
+		</attributs>
+		<couleurs>
+			<fond_tete>#FFFFFF</fond_tete>
+			<ligne>#FF7000</ligne>
+			<fond_corps>#FFB57B</fond_corps>
+			<texte>black</texte>
+		</couleurs>
+		<description></description>
+	<coords>1165.0/130.0</coords>
+	</table>
+	<table id=3>
+		<nom>espace_de_travail</nom>
+		<attributs>
+			<attribut id=1>
+				<nom>id</nom>
+				<type>integer</type>
+				<complement_type></complement_type>
+				<pk>1</pk>
+				<taille></taille>
+				<auto_increment>1</auto_increment>
+				<valeur></valeur>
+				<null>0</null>
+				<description></description>
+			</attribut>
+			<attribut id=2>
+				<nom>nom</nom>
+				<type>varchar</type>
+				<complement_type></complement_type>
+				<pk>0</pk>
+				<taille>255</taille>
+				<auto_increment>0</auto_increment>
+				<valeur>null</valeur>
+				<null>0</null>
+				<description></description>
+			</attribut>
+			<attribut id=3>
+				<nom>taille_allouee</nom>
+				<type>integer</type>
+				<complement_type></complement_type>
+				<pk>0</pk>
+				<taille></taille>
+				<auto_increment>0</auto_increment>
+				<valeur>5000</valeur>
+				<null>0</null>
+				<description></description>
+			</attribut>
+		</attributs>
+		<couleurs>
+			<fond_tete>#FFFFFF</fond_tete>
+			<ligne>#FF7000</ligne>
+			<fond_corps>#FFB57B</fond_corps>
+			<texte>black</texte>
+		</couleurs>
+		<description></description>
+	<coords>440.0/392.0</coords>
+	</table>
+</tables>
+<relations>
+</relations>
+<etiquettes>
+</etiquettes>
+<heritages>
+</heritages>
+
