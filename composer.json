@@ -1,0 +1,16 @@
+{
+    "name": "anazaar/lanthane.server",
+    "description": "Tiny PHP cloud server",
+    "license": "GPL v3.0",
+    "autoload": {
+        "psr-4": {
+            "Anazaar\\LanthaneServer\\": "./C/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mélanie Verdon Avizou"
+        }
+    ],
+    "require": {}
+}
