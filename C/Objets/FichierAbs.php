@@ -8,7 +8,7 @@ abstract class FichierAbs {
         private string $type
     ) {}
     
-        /**
+    /**
      * Getters et Setters
      */
     
