@@ -1,13 +1,15 @@
 <?php
 
-class Fichier extends FichierAsb {
+class Fichier extends FichierAbs {
 
     public function __construct(
         private int $id,
-        private string $nom,
-        private string $ext,
-        private string $type
-    ) {}
+        string $nom,
+        string $ext,
+        string $type
+    ) {
+        parent::__construct($nom, $ext, $type) ;
+    }
     
     /**
      * Getters et Setters
@@ -16,31 +18,7 @@ class Fichier extends FichierAsb {
         return $this->id ;
     }
     
-    public function get_nom() : string {
-        return $this->nom ;
-    }
-    
-    public function get_ext() : string {
-        return $this->ext ;
-    }
-    
-    public function get_type() : string {
-        return $this->type ;
-    }
-    
     public function set_id($id) {
         $this->id = $id ;
-    }
-    
-    public function set_nom($nom) {
-        $this->nom = $nom ;
-    }
-    
-    public function set_ext($ext) {
-        $this->ext = $ext ;
-    }
-    
-    public function set_type($type) {
-        $this->type = $type ;
     }
 }

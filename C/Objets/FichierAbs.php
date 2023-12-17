@@ -2,9 +2,11 @@
 
 abstract class FichierAbs {
     
-    private string $nom ;
-    private string $ext ;
-    private string $type ;
+    public function __construct(
+        private string $nom,
+        private string $ext,
+        private string $type
+    ) {}
     
         /**
      * Getters et Setters
