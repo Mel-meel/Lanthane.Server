@@ -12,5 +12,7 @@
             "name": "Mélanie Verdon Avizou"
         }
     ],
-    "require": {}
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.7"
+    }
 }
