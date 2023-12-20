@@ -18,7 +18,7 @@ class Fichier extends FichierAbs {
         return $this->id ;
     }
     
-    public function set_id($id) {
+    public function set_id(int $id) {
         $this->id = $id ;
     }
 }

@@ -24,15 +24,15 @@ class Groupe {
          return $this->utilisateurs ;
      }
      
-     public function set_id($id) {
+     public function set_id(int $id) {
          $this->id = $id ;
      }
      
-     public function set_nom($nom) {
+     public function set_nom(string $nom) {
          $this->nom = $nom ;
      }
      
-     public function set_utilisateurs$utilisateurs) {
+     public function set_utilisateurs(array $utilisateurs) {
          $this->utilisateurs = $utilisateurs ;
      }
 }

@@ -30,7 +30,7 @@ class FichierImporte extends FichierAbs {
         return $this->chemin_tmp ;
     }
     
-    public function set_chemin_tmp($chemin_tmp) {
+    public function set_chemin_tmp(string $chemin_tmp) {
         $this->chemin_tmp = $chemin_tmp ;
     }
 }

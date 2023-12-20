@@ -24,15 +24,15 @@ abstract class FichierAbs {
         return $this->type ;
     }
     
-    public function set_nom($nom) {
+    public function set_nom(string $nom) {
         $this->nom = $nom ;
     }
     
-    public function set_ext($ext) {
+    public function set_ext(string $ext) {
         $this->ext = $ext ;
     }
     
-    public function set_type($type) {
+    public function set_type(string $type) {
         $this->type = $type ;
     }
 }
