@@ -3,9 +3,13 @@
 final class Template {
     
     public function __construct(
-        private string $fichier,
+        private string $fichier = '',
         private array $vars = []
     ) {}
+    
+    public function add_var(mixed $var) : void {
+        $this->vars[] = $var ;
+    }
     
     public function template_html() : string {
         // Récupère le contenu du Template
@@ -35,5 +39,25 @@ final class Template {
             $html = str_replace($mot, $replace, $html) ;
         }
         return $html ;
+    }
+    
+    /**
+     * Getters et Setters
+     */
+    
+    public function get_fichier() : string {
+        return $this->fichier ;
+    }
+    
+    public function set_fichier(string $fichier) : void {
+        $this->fichier = $fichier ;
+    }
+    
+    public function get_vars() : array {
+        return $this->vars ;
+    }
+    
+    public function set_vars(array $vars) : void {
+        $this->vars = $vars ;
     }
 }
