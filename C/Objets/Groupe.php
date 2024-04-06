@@ -3,9 +3,9 @@
 class Groupe {
     
     public function __construct(
-        private string $id ;
-        private string $nom ;
-        private array $utilisateurs ;
+        private string $id,
+        private string $nom,
+        private array $utilisateurs
     ) {}
     
     /**

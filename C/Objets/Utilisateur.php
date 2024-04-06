@@ -3,8 +3,8 @@
 class Utilisateur {
     
     public function __construct(
-        private string $id ;
-        private string $nom ;
+        private string $id,
+        private string $nom
     ) {}
     
     /**
