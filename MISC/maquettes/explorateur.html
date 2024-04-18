@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explorateur de fichiers</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0; /* gris clair */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* Pour étendre le contenu sur toute la hauteur de la fenêtre */
+    }
+    header, footer {
+      background-color: #2196F3; /* bleu */
+      color: #fff;
+      padding: 10px 20px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    .main-content {
+      display: flex;
+      flex-grow: 1;
+      overflow: hidden;
+    }
+    .sidebar {
+      width: 25%;
+      background-color: #ddd; /* gris clair */
+      padding: 20px;
+      overflow-y: auto;
+    }
+    .file-tree {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    .file-tree li {
+      margin-bottom: 5px;
+    }
+    .file-tree li a {
+      color: #333; /* gris foncé */
+      text-decoration: none;
+      display: block;
+      padding: 5px 10px;
+      border-radius: 3px;
+      transition: background-color 0.3s ease;
+    }
+    .file-tree li a:hover {
+      background-color: #e0e0e0; /* gris clair au survol */
+    }
+    /* Style pour les sous-dossiers */
+    .sub-folder {
+      margin-left: 20px;
+      padding-left: 10px;
+      border-left: 2px solid #ccc;
+    }
+    /* Style pour les fichiers */
+    .file-list {
+      flex-grow: 1;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+      overflow-y: auto;
+    }
+    .file-item {
+      width: calc(25% - 20px);
+      margin: 10px;
+      background-color: #fff; /* blanc */
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      max-height: 150px; /* Hauteur maximale */
+      overflow: hidden;
+    }
+    .file-item h3 {
+      margin: 0;
+      font-size: 16px;
+      flex-grow: 1;
+    }
+    .file-actions {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+    .action-button {
+      padding: 5px 10px;
+      background-color: #4CAF50; /* vert */
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    .action-button:hover {
+      background-color: #45a049; /* vert foncé */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Explorateur de fichiers</h1>
+  </header>
+  <div class="main-content">
+    <div class="sidebar">
+      <h2>Arborescence des fichiers</h2>
+      <ul class="file-tree">
+        <li>
+          <a href="#">Dossier 1</a>
+          <ul class="sub-folder">
+            <li><a href="#">Fichier 1.1</a></li>
+            <li><a href="#">Fichier 1.2</a></li>
+            <li><a href="#">Fichier 1.3</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Dossier 2</a>
+          <ul class="sub-folder">
+            <li><a href="#">Fichier 2.1</a></li>
+            <li><a href="#">Fichier 2.2</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Dossier 3</a>
+          <ul class="sub-folder">
+            <li><a href="#">Fichier 3.1</a></li>
+          </ul>
+        </li>
+        <!-- Ajoutez d'autres dossiers ici -->
+      </ul>
+    </div>
+    <div class="file-list">
+      <div class="file-item">
+        <h3>Nom du fichier 1</h3>
+        <div class="file-actions">
+          <button class="action-button">Afficher</button>
+          <button class="action-button">Modifier</button>
+          <button class="action-button">Supprimer</button>
+        </div>
+      </div>
+      <div class="file-item">
+        <h3>Nom du fichier 2</h3>
+        <div class="file-actions">
+          <button class="action-button">Afficher</button>
+          <button class="action-button">Modifier</button>
+          <button class="action-button">Supprimer</button>
+        </div>
+      </div>
+      <!-- Ajoutez d'autres fichiers ici -->
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2024 Mon Entreprise - Tous droits réservés</p>
+  </footer>
+</body>
+</html>
